@@ -13,7 +13,7 @@ import com.jsonex.injectfactsample.usersession.UserSession;
 
 public class OrderService {
   public final static InjectableInstance<OrderService> instance = InjectableInstance.of(OrderService.class);
-  static OrderService get() { return instance.get(); }
+  public static OrderService get() { return instance.get(); }
 
   public CreateOrderResponse createOrder(CreateOrderRequest request) {
     CreateOrderResponse resp = new CreateOrderResponse();
